@@ -55,7 +55,7 @@
 					</li>					
 				</ul>
 				<div class='log'>
-					<span><router-link to='/zhanghao'>mcygengxin</router-link></span> | 
+					<span><router-link to='/zhanghao'>登录</router-link></span> | 
 					<span><a href="">注册</a></span>
 					<div class="logbox">
 						<router-link to='/zhanghao' class='lga'>登录</router-link>
