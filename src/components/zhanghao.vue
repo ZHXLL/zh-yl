@@ -7,13 +7,13 @@
 				
 				
 				<el-form :model="ruleForm2" status-icon :rules="rules2" ref="ruleForm2" label-width="100px" class="demo-ruleForm">
-				  <el-form-item label="密码" prop="pass">
+				  <el-form-item label="" prop="pass">
 				    <el-input type="password" v-model="ruleForm2.pass" auto-complete="off"></el-input>
 				  </el-form-item>
-				  <el-form-item label="确认密码" prop="checkPass">
+				  <el-form-item label="" prop="checkPass">
 				    <el-input type="password" v-model="ruleForm2.checkPass" auto-complete="off"></el-input>
 				  </el-form-item>
-				  <el-form-item label="年龄" prop="age">
+				  <el-form-item label="" prop="age">
 				    <el-input v-model.number="ruleForm2.age"></el-input>
 				  </el-form-item>
 				  <el-form-item>

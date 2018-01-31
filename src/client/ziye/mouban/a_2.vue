@@ -1,8 +1,10 @@
 <template>
 	<div class='top'>
-		<v_a_1></v_a_1>
+		<div class="va1">
+			<v_a_1></v_a_1>
+		</div>		
 		<div class="imgtop"></div>
-		<div class="bottoml2">
+		<div class="bottoml2" id='bottoml2'>
 			<ul>
 				<li v-for='(iem,index) in stass'>
 					<a href=""><img :src="iem.src" alt="" /></a>
@@ -77,6 +79,7 @@
 </script>
 
 <style lang="scss" scoped="" type="text/css">
+
 	.top{
 		width: 100%;
 		overflow: hidden;
@@ -219,4 +222,33 @@
 			background: #fff;
 		}
 	}
+	@media screen and (min-width: 1200px){ 		
+   		#bottoml2{
+   			width: 1200px;
+   		}
+   		
+	}
+	@media (min-width: 900px) and (max-width: 1199px){
+	   #bottoml2{
+   			width: 840px;
+   			ul{
+   				li{
+   					margin: 20px;
+   				}
+   			}
+   		}
+   		 
+	}
+	@media screen and (max-width: 899px){
+	   #bottoml2{
+   			width: 465px;
+   			ul{
+   				li{
+   					margin: 20px 40px 20px 40px;
+   				}
+   			}
+   		}
+   		 
+	}
+	
 </style>

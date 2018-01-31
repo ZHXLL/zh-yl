@@ -1,7 +1,7 @@
 <template>
 	<div class="box">
 		<div class="bix">
-			<a href="" class='left'><i> {{guonei.logo}}</i>{{guonei.name}}</a>
+			<a href="" class='left'><i :class="'i'+banben"></i>{{guonei.name}}</a>
 			<div class='top'>
 				<span v-for='(iem,index) in guonei.content' :class="index==0?'btn'+ banben +' on': 'btn'+banben">{{iem.name}}</span>					
 			</div>
@@ -45,8 +45,16 @@
 		updated(){
 			let btn=document.querySelectorAll('.btn'+this.banben);
 			let ben=document.querySelectorAll('.ben'+this.banben);
+			let thiss=this
 			for(let i=0;i<btn.length;i++){
-				btn[i].onclick=function(){					
+				btn[i].onclick=function(){
+					//跳转路由
+//					thiss.$router.push({path:'/admin/one/ym'+thiss.banben+i});
+					
+					
+					
+					
+					
 					for(let a=0; a<btn.length;a++){
 						btn[a].className='btn'
 					}
@@ -76,17 +84,28 @@
 				font-size: 18px;
 				color:#555;
 				margin-top:5px;
-				i{					
+				i{		
+					display: inline-block;
+					width: 29px;
+					height: 24px;
+					background: url(../assets/icon_index.png);
+					
+					&.i1{
+						background-position: -576px -101px;
+					}
+					&.i2{
+						background-position:-576px -131px;
+					}
 				}
 			}
 			.right{
 				float: right;
 				font-size: 14px;
-				margin-top:5px ;
 			}
 			div{
 				float: left;
 				margin-left: 20px;
+				margin-top:5px ;
 				span{
 					margin: 2px 10px 0 10px;
 					padding: 2px 10px 0 10px;

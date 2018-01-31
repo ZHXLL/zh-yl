@@ -1,6 +1,6 @@
 <template>
 	<div class='anoe'>
-		<div class="footer">
+		<div class="footer" id="footer">
 			<img src="../../../assets/logo.jpg" alt="" />
 			<div class="boxul">
 				<ul>
@@ -72,5 +72,23 @@
 				}
 			}
 		}
+	}
+	@media screen and (min-width: 1200px){ 		
+   		#footer{
+   			width: 1200px;
+   		}
+	}
+	@media (min-width: 992px) and (max-width: 1199px){
+	   #footer{
+   			width: 840px;
+   		}
+	}
+	@media screen and (max-width: 991px){
+	   #footer{
+   			width: 500px;
+   			.boxul{
+   				display: none;
+   			}
+   		}
 	}
 </style>

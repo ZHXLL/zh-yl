@@ -17,6 +17,23 @@ import bjky from '@/client/ziye/bjky.vue';
 
 //登录注册页
 import zhanghao from '@/components/zhanghao.vue'
+import denglu from '@/components/denglu.vue'
+
+
+//加页面
+//import xxke from '@/components/xxke.vue'
+//import one10 from '@/client/route/one'
+//import one11 from '@/client/route/one'
+//import one12 from '@/client/route/one'
+//import one13 from '@/client/route/one'
+//import one14 from '@/client/route/one'
+//import one15 from '@/client/route/one'
+//import one20 from '@/client/route/one'
+//import one21 from '@/client/route/one'
+//import one22 from '@/client/route/one'
+//import one23 from '@/client/route/one'
+//import one24 from '@/client/route/one'
+//import one25 from '@/client/route/one'
 
 Vue.use(Router)
 
@@ -62,7 +79,57 @@ export default new Router({
 		    				path:'/admin/one/cjjd',
 					    	component:six,
 					    	alias:'常见酒店'
-		    			}
+		    			},
+		    			//路由
+//		    			{
+//		    				path:'/admin/one/ym10',
+//					    	component:one10,
+//		    			},
+//		    			{
+//		    				path:'/admin/one/ym11',
+//					    	component:one11,
+//		    			},
+//		    			{
+//		    				path:'/admin/one/ym12',
+//					    	component:one12,
+//		    			},
+//		    			{
+//		    				path:'/admin/one/ym13',
+//					    	component:one13,
+//		    			},
+//		    			{
+//		    				path:'/admin/one/ym14',
+//					    	component:one14,
+//		    			},
+//		    			{
+//		    				path:'/admin/one/ym15',
+//					    	component:one14,
+//		    			},
+//		    			//第二个
+//		    			{
+//		    				path:'/admin/one/ym20',
+//					    	component:one20,
+//		    			},
+//		    			{
+//		    				path:'/admin/one/ym21',
+//					    	component:one21,
+//		    			},
+//		    			{
+//		    				path:'/admin/one/ym22',
+//					    	component:one22,
+//		    			},
+//		    			{
+//		    				path:'/admin/one/ym23',
+//					    	component:one23,
+//		    			},
+//		    			{
+//		    				path:'/admin/one/ym24',
+//					    	component:one24,
+//		    			},
+//		    			{
+//		    				path:'/admin/one/ym25',
+//					    	component:one25,
+//		    			},
 		    	]
 	    	},
 	    	{
@@ -108,8 +175,13 @@ export default new Router({
     {
     	path:'/zhanghao',
     	name:'账号登录注册',
-    	component:zhanghao
-    }
+    	component:denglu
+    },
+    {
+    	path:'/xxke',
+    	name:'账号登录注册',
+    	component:denglu
+    },
   ]
 })
 
