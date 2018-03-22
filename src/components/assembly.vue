@@ -45,16 +45,12 @@
 		updated(){
 			let btn=document.querySelectorAll('.btn'+this.banben);
 			let ben=document.querySelectorAll('.ben'+this.banben);
+//			console.log('.btn'+this.banben);
 			let thiss=this
 			for(let i=0;i<btn.length;i++){
 				btn[i].onclick=function(){
 					//跳转路由
 //					thiss.$router.push({path:'/admin/one/ym'+thiss.banben+i});
-					
-					
-					
-					
-					
 					for(let a=0; a<btn.length;a++){
 						btn[a].className='btn'
 					}
@@ -121,6 +117,7 @@
 					border: 1px solid #fff;
 					&:hover{
 						border: 1px solid #F66;
+						color:#f55;
 					}
 					&.on{
 						background: #F66;

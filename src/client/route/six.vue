@@ -9,8 +9,9 @@
 
 <style lang="scss" scoped="" type="text/css">
 	div{
-		line-height: 100px;
+		line-height: 200px;
 		text-align: center;
-		font: 20px;
+		font: 50px;
+		background: #65c294;
 	}
 </style>

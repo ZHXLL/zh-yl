@@ -29,6 +29,7 @@
 					</router-link>
 					<div class='benp'>
 							<p>今冬北京 圣诞情浓</p>
+							
 					</div>
 				</li>
 				
@@ -37,7 +38,7 @@
 	</div>
 </template>
 
-<script type='text/ecmascript-6'>
+<script>
 	import img1 from '../../assets/17121251.jpg'
 	import img2 from '../../assets/17121252.jpg'
 	import img3 from '../../assets/17121253.jpg'

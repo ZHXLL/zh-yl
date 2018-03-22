@@ -110,6 +110,7 @@
 					border: 1px solid #fff;
 					&:hover{
 						border: 1px solid #49f;
+						 color: #49f;
 					}
 					&.on{
 						background: #49f;

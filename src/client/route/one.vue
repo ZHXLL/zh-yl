@@ -4,7 +4,7 @@
 		<div class="trues" v-if='true'>
 			<div class="truebox">
 				<i></i>
-				<a href="">登录</a><span>展示你的个性化内容</span>
+				<a href="">登录</a><span @click="vxadd('你好')">展示你的个性化内容</span>
 			</div>
 		</div>
 		<div class="sf">
@@ -15,7 +15,7 @@
 			<b_assembly :guonei='guonei' banben='1'></b_assembly>			
 			<b_assembly :guonei='guowai' banben='2'></b_assembly>
 		</div>
-		<v_title banben='2' txt1='超值特价票' txt2='' colors='#49f'></v_title>
+		<v_title banben='2' txt1='超值特价票' txt2='' colors='#49f' ></v_title>
 		<div class="two">
 			<b_ticket :dates='jipiao' banben='1'></b_ticket>
 			<b_ticket :dates='zhepiao' banben='2'></b_ticket>
@@ -75,8 +75,8 @@
 				console.log('没成功')
 			})		
 		},
-		mounted(){
-			
+		mounted(){		
+
 		},
 		components:{
 			v_carousel,
@@ -86,12 +86,21 @@
 			b_ticket,
 			v_lvyou,
 			v_footer_a,
-			v_footers			
+			v_footers
 		},
 		methods:{
 			...mapMutations(['add','reduce']),
-			
-		}
+			vxadd(name){
+				console.log(this.count);
+				this.add(name);
+				console.log(this.count);
+			}
+		},
+		 computed: {
+            ...mapState([
+                'count'
+            ]),
+        }
 		
 	}
 </script>

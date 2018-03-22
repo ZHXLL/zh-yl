@@ -52,7 +52,9 @@
 				<ul>
 					<li v-for='(iem,index) in route'>
 						<router-link :to='iem.path'>{{iem.alias}}</router-link>
-					</li>					
+					</li>				
+					<!--<li @click='$router.go(-1)'><span>awdawd</span> </li>
+					<li @click='$router.go(1)'><span>awdawd</span> </li>-->
 				</ul>
 				<div class='log'>
 					<span><router-link to='/zhanghao'>登录</router-link></span> | 
@@ -295,7 +297,7 @@
 				height: 40px;
 				margin: 0 auto;
 				&>ul{
-					width: 483px;
+					width: 600px;
 					height: 40px;
 					background: #2064c8;
 					float: left;

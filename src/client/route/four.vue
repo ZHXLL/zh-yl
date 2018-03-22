@@ -1,6 +1,6 @@
 <template>
 	<div>
-		我是第四个
+		{{$store.state.count}}
 	</div>
 </template>
 
@@ -22,8 +22,9 @@
 
 <style lang="scss" scoped="" type="text/css">
 	div{
-		line-height: 100px;
+		line-height: 200px;
 		text-align: center;
-		font: 20px;
+		font: 50px;
+		background: #abcdef;
 	}
 </style>
